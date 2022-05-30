@@ -53,6 +53,10 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        if (Input.GetKey("s") && Input.GetKey("k") && Input.GetKey("i") && Input.GetKey("p"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
         UpdateAnimationState();
     }
     private void UpdateAnimationState()
